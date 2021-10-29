@@ -20,6 +20,6 @@ This website is licensed with default copyright.
 
 ### Credits
 
-https://startbootstrap.com/theme/new-age
-
-https://www.bootdey.com/snippets/view/microsoft-metro-tiles-bootstrap#html
+- https://startbootstrap.com/theme/new-age
+- https://www.bootdey.com/snippets/view/microsoft-metro-tiles-bootstrap#html
+- https://nanmu.me/en/posts/2020/hugo-i18n-automatic-language-redirection/

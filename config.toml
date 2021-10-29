@@ -1,6 +1,8 @@
 baseURL = "http://jmewes.github.io/ep-gss-homepage"
 languageCode = "en-gb"
 title = "Google Smart Shopping powered by ePages"
+defaultContentLanguageInSubdir = true
+defaultContentLanguage = "en"
 
 [languages]
   [languages.de]
