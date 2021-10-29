@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>{{ .Title }}</title>
+  
+  <script>
+    var baseURL = {{ .Site.BaseURL }};
+    var pdfURL = {{ .Params.PdfURL }};
+    window.location.replace(baseURL + pdfURL);
+  </script> 
+</head>
+<body>
+  <a href="{{ .Params.PdfURL }}">Download</a>
+</body>
+</html>
