@@ -2,6 +2,8 @@
 <head>
   <title>{{ .Title }}</title>
   
+  {{ partial "localizer.html" . }}
+  
   <script>
     var baseURL = {{ .Site.BaseURL }};
     var pdfURL = {{ .Params.PdfURL }};

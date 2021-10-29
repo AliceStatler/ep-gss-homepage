@@ -1,0 +1,13 @@
+<script>
+	var baseURL = {{ .Site.BaseURL }};
+	var permalink = {{ .Permalink }};
+	var relativeLink = permalink.replace(baseURL, "");
+	
+	var searchPattern = new RegExp('^[a-z]{2}/.*');
+	var isLocalizedURL = searchPattern.test(relativeLink);
+	if (isLocalizedURL) {
+		console.log("match");
+	} else {
+		console.log("no match");
+	}
+</script>
