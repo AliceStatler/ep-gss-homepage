@@ -19,6 +19,10 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ "css/styles.css" | relURL }}" rel="stylesheet" />
         <link href="{{ "css/tiles.css" | relURL }}" rel="stylesheet" />
+        <link href="{{ "css/creative.css" | relURL }}" rel="stylesheet">
+        <link href="{{ "css/custom.css" | relURL }}" rel="stylesheet">
+        
+        
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -51,9 +55,8 @@
         <aside class="text-center bg-gradient-primary-to-secondary">
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
-                    <div class="col-xl-8">
-                        <div class="h2 fs-1 text-white mb-4">"An intuitive solution to a common problem that we all face, wrapped up in a single app!"</div>
-                        <img src="{{ "assets/img/tnw-logo.svg" | relURL }}" style="height: 3rem" />
+                    <div class="col-xl-12">
+                        {{ partial "screenshots.html" . }}
                     </div>
                 </div>
             </div>
@@ -172,9 +175,14 @@
                 </div>
             </div>
         </footer>
+        
+        <script src="{{ "js/creative.min.js" | relURL }}"></script>
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="{{ "js/scripts.js" | relURL }}"></script>
+        
+        
     </body>
 </html>
