@@ -13,3 +13,33 @@ concept.heading:
 concept.description:
   other: ePages is managing your Google Merchant Center and Google Ads accounts on your behalf. Your products are uploaded to the Merchant Center. The Merchant Center account gets linked with the Ads account. In the Ads account campaigns get created and reports get fetched, so that you need nothing to do in the Ads account but setting up your billing information.
   
+feature1.heading:
+  other: Google Merchant Center
+feature1.description:
+  other: Connect your shop with an already existing Google Merchant Center account or create a new account directly from within the shop.
+
+feature2.heading:
+  other: Product upload
+feature2.description:
+  other: Automatically upload and synchronise the products in your shop with the Google Merchant Center, using the FTP upload.  
+
+feature3.heading:
+  other: Google Ads
+feature3.description:
+  other: Create a new Google Ads account, directly from within your shop administration.
+
+feature4.heading:
+  other: Smart Shopping Campaigns
+feature4.description:
+  other: Create ad campaigns with showcase your products to millions of shoppers across Google Search, Shopping, Gmail, YouTube, and the Display Network.  
+
+feature5.heading:
+  other: Conversion tracking
+feature5.description:
+  other: When someone follows an ad and then purchases something, we will keep track of it and send this information to Google Ads.  
+
+feature6.heading:
+  other: Campaign performance reports
+feature6.description:
+  other: You will have an overview over the costs and benefits of your Smart Shopping Campaigns directly in your shop administration.   
+          
