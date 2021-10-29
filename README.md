@@ -14,6 +14,20 @@ Run the following command to preview changes in a browser:
 hugo server
 ```
 
+## Localization
+
+```
+{{ i18n "concept.description" }}
+```
+
+## Architecture
+
+```
+<link href="{{ "css/styles.css" | relURL }}" rel="stylesheet" />
+
+{{ partial "teaser.html" . }}
+```
+
 ## License
 
 This website is licensed with default copyright.
