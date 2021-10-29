@@ -1,9 +1,16 @@
 baseURL = "http://jmewes.github.io/ep-gss-homepage"
-languageCode = "en-gb"
 title = "Google Smart Shopping powered by ePages"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
+
+# Using a language which ePages doesn't support as default language.
+# This is a hack to always dispatch to a language code if it is not found in the URL
 defaultContentLanguage = "en"
 
 [languages]
-  [languages.de]
   [languages.en]
+  
+  [languages.en-gb]
+    contentDir = 'content/en-gb'
+  
+  [languages.de]
+    contentDir = 'content/de'
