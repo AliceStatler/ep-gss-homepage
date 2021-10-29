@@ -1,11 +1,7 @@
 baseURL = "http://jmewes.github.io/ep-gss-homepage"
-languageCode = "de-de"
-title = "Google Smart Shopping @ ePages"
-defaultContentLanguage = 'de'
+languageCode = "en-gb"
+title = "Google Smart Shopping powered by ePages"
 
 [languages]
   [languages.de]
-    tagline = 'Mit der ePages Integration von Google Smart Shopping können Sie TBD'
-
   [languages.en]
-    tagline = "With ePages' Google Smart Shopping integration you can create ads for the products in your online shop with minimal effort. Connect your account, upload your products, create a campaign – done."
