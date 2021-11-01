@@ -49,11 +49,11 @@ if (!isLocalizedURL) {
 
   var firstBrowserLanguage = getFirstBrowserLanguage();
 
-  // var normalizedRelativeLink = relativeLink.replace(/\/$/, "");
+  var normalizedRelativeLink = relativeLink.replace(/^\//, "").replace(/\/$/, "");
   if (firstBrowserLanguage.startsWith('de')) {
-    window.location.replace(baseURL + /de/ + relativeLink);
+    window.location.replace(baseURL + /de/ + normalizedRelativeLink);
   } else {
-    window.location.replace(baseURL + /en/ + relativeLink);
+    window.location.replace(baseURL + /en/ + normalizedRelativeLink);
   }
   
 }
