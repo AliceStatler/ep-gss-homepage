@@ -12,8 +12,11 @@
 
       var searchPattern = new RegExp('^[/]?[a-z]{2}/.*');
       var isLocalizedURL = searchPattern.test(relativeLink);
+      
+      console.log("searchPattern#test:" + searchPattern.test(relativeLink));
 
       if (!isLocalizedURL) {
+        console.log("Relavtive link not localized: " + relativeLink);
 
         // https://github.com/gohugoio/hugo/issues/4279#issue-288563807
         var getFirstBrowserLanguage = function () {
