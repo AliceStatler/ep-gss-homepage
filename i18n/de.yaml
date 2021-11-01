@@ -1,5 +1,8 @@
+legal-documents.terms-of-use:
+  other: assets/terms-of-use_de.pdf
+
 navbar.features:
-    other: Funktionen
+  other: Funktionen
 navbar.concept:
   other: Konzept
 navbar.legal:
