@@ -5,6 +5,10 @@
       var baseURL = {{ .Site.BaseURL }};
       var permalink = {{ .Permalink }};
       var relativeLink = permalink.replace(baseURL, "");
+      
+      console.log("baseURL: " + baseURL);
+      console.log("permalink: " + permalink);
+      console.log("relativeLink: " + relativeLink);
 
       var searchPattern = new RegExp('^[a-z]{2}/.*');
       var isLocalizedURL = searchPattern.test(relativeLink);
