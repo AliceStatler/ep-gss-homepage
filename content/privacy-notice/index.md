@@ -1,5 +1,5 @@
-# Terms of use!?
+# Privacy notice
 
-- English: TBD
-- Deutsch: TBD
+- [English](https://jmewes.github.io/ep-gss-homepage/assets/privacy-notice_en.pdf)
+- [Deutsch](https://jmewes.github.io/ep-gss-homepage/assets/privacy-notice_de.pdf)
 

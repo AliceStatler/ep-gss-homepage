@@ -1,5 +1,6 @@
-# Terms of use!?
+# Terms of use
 
-- English: TBD
-- Deutsch: TBD
+- [English](https://jmewes.github.io/ep-gss-homepage/assets/terms-of-use_en.pdf)
+- [Deutsch](https://jmewes.github.io/ep-gss-homepage/assets/terms-of-use_de.pdf)
+
 
