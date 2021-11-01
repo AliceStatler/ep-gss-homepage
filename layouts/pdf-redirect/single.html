@@ -7,6 +7,11 @@
   <script>
     var baseURL = {{ .Site.BaseURL }};
     var pdfURL = {{ .Params.PdfURL }};
+    
+    if (!(baseURL.substr(-1) === '/' || pdfURL.substr(0) === '/') {
+      baseURL = baseURL + '/'
+    }
+    
     window.location.replace(baseURL + pdfURL);
   </script> 
 </head>
