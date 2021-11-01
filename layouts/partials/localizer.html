@@ -10,7 +10,7 @@
       console.log("permalink: " + permalink);
       console.log("relativeLink: " + relativeLink);
 
-      var searchPattern = new RegExp('^[a-z]{2}/.*');
+      var searchPattern = new RegExp('^[/]?[a-z]{2}/.*');
       var isLocalizedURL = searchPattern.test(relativeLink);
 
       if (!isLocalizedURL) {
