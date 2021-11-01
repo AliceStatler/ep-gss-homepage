@@ -1,4 +1,4 @@
 ---
-pdfURL: assets/privacy-notice_de.pdf
+pdfURL: assets/terms-of-use_de.pdf
 type: pdf-redirect
 ---
