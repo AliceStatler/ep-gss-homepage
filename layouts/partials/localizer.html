@@ -1,66 +1,62 @@
 <script>
-  document.addEventListener('readystatechange', event => { 
 
-    if (event.target.readyState === "interactive") { 
-      var baseURL = {{ .Site.BaseURL }};
-      var permalink = {{ .Permalink }};
-      var relativeLink = permalink.replace(baseURL, "");
-      
-      if (!(relativeLink.substr(-1) === '/')) {
-        relativeLink = relativeLink + '/'
-      }
-      
-      console.log("baseURL: " + baseURL);
-      console.log("permalink: " + permalink);
-      console.log("relativeLink: " + relativeLink);
+if (event.target.readyState === "interactive") { 
+  var baseURL = {{ .Site.BaseURL }};
+  var permalink = {{ .Permalink }};
+  var relativeLink = permalink.replace(baseURL, "");
+  
+  if (!(relativeLink.substr(-1) === '/')) {
+    relativeLink = relativeLink + '/'
+  }
+  
+  console.log("baseURL: " + baseURL);
+  console.log("permalink: " + permalink);
+  console.log("relativeLink: " + relativeLink);
 
-      var searchPattern = new RegExp('^[/]?[a-z]{2}/.*');
-      var isLocalizedURL = searchPattern.test(relativeLink);
-      
-      console.log("searchPattern#test:" + searchPattern.test(relativeLink));
+  var searchPattern = new RegExp('^[/]?[a-z]{2}/.*');
+  var isLocalizedURL = searchPattern.test(relativeLink);
+  
+  console.log("searchPattern#test:" + searchPattern.test(relativeLink));
 
-      if (!isLocalizedURL) {
-        console.log("Relavtive link not localized: " + relativeLink);
+  if (!isLocalizedURL) {
+    console.log("Relavtive link not localized: " + relativeLink);
 
-        // https://github.com/gohugoio/hugo/issues/4279#issue-288563807
-        var getFirstBrowserLanguage = function () {
-          var nav = window.navigator,
-          browserLanguagePropertyKeys = ['language', 'browserLanguage', 'systemLanguage', 'userLanguage'],
-          i,
-          language
+    // https://github.com/gohugoio/hugo/issues/4279#issue-288563807
+    var getFirstBrowserLanguage = function () {
+      var nav = window.navigator,
+      browserLanguagePropertyKeys = ['language', 'browserLanguage', 'systemLanguage', 'userLanguage'],
+      i,
+      language
 
-          if (Array.isArray(nav.languages)) {
-            for (i = 0; i < nav.languages.length; i++) {
-              language = nav.languages[i]
-              if (language && language.length) {
-                return language
-              }
-            }
+      if (Array.isArray(nav.languages)) {
+        for (i = 0; i < nav.languages.length; i++) {
+          language = nav.languages[i]
+          if (language && language.length) {
+            return language
           }
-
-          // support for other well known properties in browsers
-          for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
-            language = nav[browserLanguagePropertyKeys[i]]
-            if (language && language.length) {
-              return language
-            }
-          }
-          return 'en'
-        }
-
-        var firstBrowserLanguage = getFirstBrowserLanguage();
-
-        var normalizedRelativeLink = relativeLink.replace(/\/$/, "").replace(/^\//, "");
-        if (firstBrowserLanguage.startsWith('de')) {
-          window.location.replace(baseURL + /de/ + normalizedRelativeLink);
-        } else {
-          window.location.replace(baseURL + /en/ + normalizedRelativeLink);
         }
       }
+
+      // support for other well known properties in browsers
+      for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
+        language = nav[browserLanguagePropertyKeys[i]]
+        if (language && language.length) {
+          return language
+        }
+      }
+      return 'en'
     }
 
+    var firstBrowserLanguage = getFirstBrowserLanguage();
 
-});
-  
-  
+    var normalizedRelativeLink = relativeLink.replace(/\/$/, "").replace(/^\//, "");
+    if (firstBrowserLanguage.startsWith('de')) {
+      window.location.replace(baseURL + /de/ + normalizedRelativeLink);
+    } else {
+      window.location.replace(baseURL + /en/ + normalizedRelativeLink);
+    }
+  }
+}
+
+
 </script>
