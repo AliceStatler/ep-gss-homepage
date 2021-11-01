@@ -1,0 +1,64 @@
+legal-documents.terms-of-use:
+  other: assets/terms-of-use_en.pdf
+
+navbar.features:
+  other: Features
+navbar.concept:
+  other: Concept
+navbar.legal:
+  other: Legal
+
+tagline:
+  other: With ePages' Google Smart Shopping integration you can create ads for the products in your online shop with minimal effort. Connect your Google accounts, upload your products, and create a campaign – done.
+  
+concept.heading:
+  other: Konzept
+concept.description:
+  other: ePages is managing your Google Merchant Center and Google Ads accounts on your behalf. Your products are uploaded to the Merchant Center. The Merchant Center account gets linked with the Ads account. In the Ads account campaigns get created and reports get fetched, so that you need nothing to do in the Ads account but setting up your billing information. After the creation of a Smart Shopping Campaign, tracking information for Conversion Actions and Remarketing Tags will be sent from your shop to Google.
+  
+feature1.heading:
+  other: Google Merchant Center
+feature1.description:
+  other: Connect your shop with an already existing Google Merchant Center account or create a new account directly from within the shop.
+
+feature2.heading:
+  other: Product upload
+feature2.description:
+  other: Automatically upload and synchronise the products in your shop with the Google Merchant Center, using the FTP upload.  
+
+feature3.heading:
+  other: Google Ads
+feature3.description:
+  other: Create a new Google Ads account, directly from within your shop administration.
+
+feature4.heading:
+  other: Smart Shopping Campaigns
+feature4.description:
+  other: Create ad campaigns with showcase your products to millions of shoppers across Google Search, Shopping, Gmail, YouTube, and the Display Network.  
+
+feature5.heading:
+  other: Conversion tracking
+feature5.description:
+  other: When someone follows an ad and then purchases something, we will keep track of it and send this information to Google Ads.  
+
+feature6.heading:
+  other: Campaign performance reports
+feature6.description:
+  other: You will have an overview over the costs and benefits of your Smart Shopping Campaigns directly in your shop administration.   
+
+legal.heading:
+  other: Legal content
+legal.download-hint:
+  other: (click right to download)
+legal.privacy-notice.label:
+  other: Privacy notice
+legal.terms-of-use.label:
+  other: Terms of use
+legal.copyright-notice:
+  other: ePages GmbH 2021. All rights reserved.
+
+legal.imprint.label:
+  other: Imprint
+legal.imprint.link:
+  other: https://epages.com/en/legal-notice
+  
