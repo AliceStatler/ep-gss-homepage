@@ -20,6 +20,11 @@ hugo server
 {{ i18n "concept.description" }}
 ```
 
+## Page params
+
+```
+```
+
 ## Architecture
 
 ```

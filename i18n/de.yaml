@@ -1,5 +1,3 @@
-legal-documents.terms-of-use:
-  other: assets/terms-of-use_de.pdf
 
 navbar.features:
   other: Funktionen
@@ -14,7 +12,7 @@ tagline:
 concept.heading:
   other: Konzept
 concept.description:
-  other: ePages verwaltet Ihre Google Merchant Center und Google Ads Konten in Ihrem Namen. Ihre Produkte werden in das Merchant Center hochgeladen. Das Merchant Center Konto wird mit dem Ads Konto verknüpft. In dem Ads Konto werden Kampangnen angelegt und Berichte abgefragt, so dass Sie in dem Ads Konto selbst nichts weiter machen brauchen als Ihre Rechnungsdaten zu hinterlegen.
+  other: ePages verwaltet Ihre Google Merchant Center und Google Ads Konten in Ihrem Namen. Ihre Produkte werden in das Merchant Center hochgeladen. Das Merchant Center Konto wird mit dem Ads Konto verknüpft. In dem Ads Konto werden Kampangnen angelegt und Berichte abgefragt, so dass Sie in dem Ads Konto selbst nichts weiter machen brauchen als Ihre Rechnungsdaten zu hinterlegen. Nach dem Anlegen von Smart Shopping Kampagnen wird Tracking Information zu Conversions und Remarketing von Ihrem Shop an Google gesendet.
 
 feature1.heading:
   other: Google Merchant Center
@@ -45,3 +43,18 @@ feature6.heading:
   other: Kampangnen Bericht
 feature6.description:
   other: Behalten Sie die Übersicht über die Kosten und Nutzen der Kampangnen, direkt aus Ihrer Shop Administration heraus.
+
+legal.heading:
+  other: Rechtliches
+legal.download-hint:
+  other: (Rechtsklick zum Herunterladen)
+legal.privacy-notice.label:
+  other: Datenschutzrichtline
+legal.terms-of-use.label:
+  other: Allgemeine Geschäftsbedingungen  
+legal.copyright-notice:
+  other: ePages GmbH 2021. Alle Rechte vorbehalten.
+legal.imprint.label:
+  other: Impressum
+legal.imprint.link:
+  other: https://epages.com/de/impressum/
