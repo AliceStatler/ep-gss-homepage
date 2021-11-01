@@ -5,13 +5,16 @@
       var baseURL = {{ .Site.BaseURL }};
       var permalink = {{ .Permalink }};
       var relativeLink = permalink.replace(baseURL, "");
-      relativeLink = relativeLink.replace(/\/$/, "");
+      
+      if (!(relativeLink.substr(-1) === '/')) {
+        relativeLink = relativeLink + '/'
+      }
       
       console.log("baseURL: " + baseURL);
       console.log("permalink: " + permalink);
       console.log("relativeLink: " + relativeLink);
 
-      var searchPattern = new RegExp('^[/]?[a-z]{2}[/]?.*');
+      var searchPattern = new RegExp('^[/]?[a-z]{2}/?.*');
       var isLocalizedURL = searchPattern.test(relativeLink);
       
       console.log("searchPattern#test:" + searchPattern.test(relativeLink));
